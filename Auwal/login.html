@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>log in</title>
+    <script src="/assets/js/storage.js"></script>
+    <script src="/assets/js/app.js"></script>
+</head>
+<style>
+    #back{
+        text-align: center;
+        
+        
+    }
+    #up{
+        color: rgb(204, 121, 121);
+    }
+    #hello{
+        background-color: rgb(204, 121, 121);
+    
+    }
+    #box{
+         box-shadow: -20px 15px 30px 20px rgb(204, 121, 121) ;
+    }
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: white;">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color:green;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:green;">about us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:green;">I'm Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:green;">News and Event</a>
+              </li>
+          
+      
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <a href="/register.html" class="mr-sm-2 btn" style="color: green;" > create account</a>
+              <a href="/login.html" class="btn btn-outline-success my-2 my-sm-0" style="background-color: rgb(95,204,130); color: white;">Log in</a>
+          </form>
+        </div>
+      </nav>
+      <br><br><br>
+    <div class="container">
+        <div id="box" class="row">
+            <div class="col-md-6"><br>
+        <h2>Log me in</h2>
+        <h5>log in with your data <br> that you entered <br>during registration.</h5><br>
+        <label for="username">username</label> 
+        <input type="text" id="username" class="form-control" placeholder="username">
+        <br>
+        <label for="password">your password</label> 
+        <input type="password" id="password" class="form-control" placeholder="at least 8 characters">
+        <br>
+        <input type="checkbox" name="" id=""> keep me logged in </input>
+        <button style="background-color: rgb(204, 121, 121);" class="btn btn-primary form-control" onclick="Auth()">Login</button> <br>
+        <p style="text-align:center;  ">Dont have an account? <strong style="color: rgb(204, 121, 121);">Sign Up</strong></p>
+        <p style="text-align: center; color: rgb(204, 121, 121); "><strong>Forgot password?</strong></p>
+        <h5 id="alert" style="display: none;" class="alert alert-info" ></h5>
+                                                
+
+                  
+
+                <!-- <div class="col-lg-6">
+
+                </div> -->
+            </div>
+        <style>
+          
+
+        
+            #border{
+                       background-color: seashell;
+                       height: 250px;
+                       width:150px;
+                       margin-top: 100px;
+                       margin-left: 200px;
+                       border-radius:  10px;
+                       
+                   }
+                
+            
+               </style>
+            <div style="background-color:rgb(204, 121, 121); " class="col-lg-6">
+                <div style="text-align: center;" class="row">
+                    <div id="border" class="col-lg-6">
+                    
+
+    <div class="row">
+       <div class="col">
+        <i class="fa fa-user-circle fa-3x"></i>
+        
+
+
+       </div>
+        <div class="col">
+            <h6>Frank Boehm</h6>
+            <p>Tenant</p>
+            
+        </div>
+     </div>
+     <div class="row">
+        <div class="col">
+            <i class="fa fa-envelope fa-3x"></i>
+
+ 
+        </div>
+         <div class="col">
+            <h6>Auwal@gmail.com</h6>
+
+ 
+         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <i class="fa fa-phone fa-3x"></i>
+
+ 
+        </div>
+         <div class="col">
+            +2347068736371
+
+ 
+         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <i class="fa fa-home fa-3x"></i>
+
+ 
+        </div>
+         <div class="col">
+            ITF HOUSE MAITAMA
+
+ 
+         </div>
+         <style>
+            #space{
+                background-color: rgb(202, 177, 177);
+                height: 100px;
+                width: 210px;
+                margin: 25px;
+                margin-left: 180px;
+                margin-top: 5px;
+                margin-bottom: 900px;
+
+            }
+        </style>
+        <div class="row">
+         <div class="col" id="space">
+            <i class="fa fa-circle-notch"></i>
+             9.3446$ <br>
+             total receipt this month <br> 
+             <p>Assign payment <strong> < </strong></p>
+  
+         </div>
+         
+        </div>
+      </div>
+      
+
+                            
+                                <!-- <div class="row">
+                                  <div class="col" style="width: 5px;">
+                                   <i class="fa fa-user-circle"></i> 
+                                  </div>
+                                     <div class="col">
+                                       <h6>Frank Boehm</h6>
+                                       <p>Tenant</p>
+                                     </div>
+                                </div>
+                                <div class="row">
+                                   <div class="col">
+                                       <i class="fa fa-envelope"></i> 
+                                   </div>
+                                      <div class="col">
+                                         <p>Hello</p>
+                                      </div>
+                                 </div>
+                                 <div class="row">
+                                   <div class="col">
+                                       <i class="fa fa-home"></i>
+                                   </div>
+                                      <div class="col">
+                                         <p>Hello</p>
+                                      </div>
+                                 </div>
+                                 <div class="row">
+                                   <div class="col">
+                                       <i class="fa fa-home fa-fa"></i>
+                                   </div>
+                                      <div class="col">
+                                         <p>Hello</p>
+                                      </div>
+                                 </div>
+                              </div>
+                        
+                        </div>
+                     -->
+                </div>
+                    
+                </div>
+               
+
+
+
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>
